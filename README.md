@@ -64,7 +64,7 @@ The following questions were utilized as a guide for the present project:
 First of all, I tried to identify which days of the week were the busiest, as well as the hours of the day, since this is one of the key questions to be answered in this project. 
 
 <p align="center">
-    <img alt="Light" src="https://github.com/robcabr/Instacart_Analysis_Sales/raw/main/Visualizations/Visualizations/Customer%20Profiling/bar_orders_dow.png" width="50%">
+    <img alt="Light" src="https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/bar_orders_dow.png" width="50%">
 </p>
 
 The days are identified as follows: Saturday(0), Sunday(1), Monday(2), Tuesday(3), Wednesday(4), Thursday(5), and Friday(6).
@@ -75,8 +75,8 @@ After identifying the frequency of sales by day, it was important to identify th
 
 
 <p align="center">
-    <img alt="Light" src = "https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/Visualizations/Customer%20Profiling/hist_order_by_hour.png" width="50%">
-    <img alt="Dark" src ="https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/Visualizations/Customer%20Profiling/line_expenditure_by_hour.png" width="45%">
+    <img alt="Light" src = "https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/hist_order_by_hour.png" width="50%">
+    <img alt="Dark" src ="https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/line_expenditure_by_hour.png" width="50%">
 </p>
 
 According to the visualization line above, prices tend to be higher between 04 AM to 08 AM and 8 PM until 10 PM. On the other hand, from 12 am to 3 am, Instacart's clients tend to spend less. 
@@ -84,7 +84,7 @@ According to the visualization line above, prices tend to be higher between 04 A
 As for the histogram, it's clear that the busiest hours are around 10 AM to 3 PM, while the least busy hours are between 12 AM to 5 AM. 
 
 <p align="center">
-    <img alt="Light" src = "https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/Visualizations/Customer%20Profiling/hist_price_frequency_bins70.png" width="50%">
+    <img alt="Light" src = "https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/hist_price_frequency_bins70.png" width="50%">
 </p>
 
 Lastly, it was created a histogram based on price by frequency, where it was possible to identify that most of the products consumed are below $15 and after this price range the consumption drops drastically. 
@@ -97,9 +97,27 @@ After identifying the sales pattern, I started to create a profile for Instacart
 So, for that I tried to identify any correlation between age and other variables. 
 
 <p align="center">
-    <img alt="Light" src = "https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/Visualizations/Customer%20Profiling/scatt_age_income.png" width="50%">
-    <img alt="Dark" src ="https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/Visualizations/Customer%20Profiling/line_age_family.png" width="45%">
+    <img alt="Light" src = "https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/scatt_age_income.png" width="50%">
+    <img alt="Dark" src ="https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/line_age_family.png" width="50%">
 </p>
+
+In both cases the analysis was unsuccessful, since:
+1. It was not possible to observe any correlation between age and income, as could be observed a high flunctuation as the age increases.
+2. Also, it couldn't be observed any correlation between age and number of dependants, as there is no clear pattern between these variables.
+
+So, it was necessary to take another direction in the customer profiling.
+
+For this, I created a profile based on the frequencdy of order placed by a customer, divided in three categories:
+- Loyal Customer - Customer that has already made more than 40 orders.
+- Regular Customer - Customer that has made less than 40 order but more than 10. 
+- New Customer - Customer that has less than 10 orders.
+
+<p align="center">
+    <img alt="Dark" src ="https://github.com/robcabr/Instacart_Analysis_Sales/blob/main/Visualizations/bar_loyalty_brand.png" width="50%">
+</p>
+
+As can be observed above, there are a higher presence of Regular Customers, followed by Loyal Customers and then New Customers. 
+Although the requirements to be classified as a loyal customer require a high number of orders, the amount of regular customers far exceed the number of loyal, which could be an indicative that the majority of Instacart's income comes from customers who have a habit of place from 10 to 40 orders per year. 
 
 
 ## Conclusion and Recommendations
