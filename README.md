@@ -7,8 +7,9 @@
 - [Dataset](#dataset)
 - [Data Limitations](#data-limitations)
 - [Key Questions](#key-questions)
-- [Conclusions and Reccomendations](#conclusion-and-recommendations)
-
+- [Customer Behavior - Sales Pattern](#customer-behavior---sales-pattern)
+- [Customer Profiling](#customer-profiling)
+- [Key Observations and Recommendations](#key-observations-and-recommendations)
 ## Project Overview
 Instacart is a popular mobile app that offers to their customers a huge variety of online grocery store for their convenience. This projects involves analyzing Instacart's 2017 sales data to uncover patters and insights of customer purchasing behaviors. The goal in this project is to offer Instacart marketing stratagies by understanding how each customer profile interact with their platform. 
 
